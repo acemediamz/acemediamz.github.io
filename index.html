@@ -46,32 +46,36 @@
 
 <!-- Navbar -->
 <!-- NAVBAR com botão hambúrguer à esquerda -->
-<nav class="navbar" style="background-color: #005b99;">
-  <div class="container d-flex align-items-center">
-    <!-- Botão hambúrguer -->
-    <button class="btn text-white fs-3 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+<!-- MENU SUPERIOR COM BOTÃO HAMBÚRGUER -->
+<nav class="navbar navbar-light bg-white border-bottom shadow-sm">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!-- Botão hambúrguer à esquerda -->
+    <button class="btn fs-3 text-primary me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral">
       ☰
     </button>
-    <!-- Nome da marca -->
-    <a class="navbar-brand text-white fw-bold" href="#">ACE Media</a>
+
+    <!-- Nome da Marca -->
+    <a class="navbar-brand fw-bold" href="#">ACE Media</a>
   </div>
 </nav>
-<!-- Menu Lateral (Offcanvas) -->
-<div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="menuLateral">
+
+<!-- MENU LATERAL (offcanvas) -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title">Menu</h5>
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     <ul class="list-unstyled">
-      <li><a class="text-white d-block py-2" href="#"><span>🏠</span> Início</a></li>
-      <li><a class="text-white d-block py-2" href="#about"><span>🎯</span> Sobre Nós</a></li>
-      <li><a class="text-white d-block py-2" href="#services"><span>🧰</span> Serviços</a></li>
-      <li><a class="text-white d-block py-2" href="#portfolio"><span>🖼️</span> Portfólio</a></li>
-      <li><a class="text-white d-block py-2" href="#contact"><span>📞</span> Contacto</a></li>
-      <li><a class="text-white d-block py-2" href="https://wa.me/258875099034" target="_blank"><span>📱</span> WhatsApp</a></li>
-      <li><a class="text-white d-block py-2" href="https://instagram.com/acemedia.mz" target="_blank"><span>📷</span> Instagram</a></li>
-      <li><a class="text-white d-block py-2" href="https://facebook.com/acemedia.mz" target="_blank"><span>👍</span> Facebook</a></li>
+      <li><a class="d-block py-2 text-dark" href="#home">🏠 Início</a></li>
+      <li><a class="d-block py-2 text-dark" href="#about">🎯 Sobre Nós</a></li>
+      <li><a class="d-block py-2 text-dark" href="#services">🧰 Serviços</a></li>
+      <li><a class="d-block py-2 text-dark" href="#portfolio">🖼️ Portfólio</a></li>
+      <li><a class="d-block py-2 text-dark" href="#contact">📞 Contacto</a></li>
+      <li><a class="d-block py-2 text-dark" href="https://wa.me/258875099034" target="_blank">📱 WhatsApp</a></li>
+      <li><a class="d-block py-2 text-dark" href="https://instagram.com/acemedia.mz" target="_blank">📷 Instagram</a></li>
+      <li><a class="d-block py-2 text-dark" href="https://facebook.com/acemedia.mz" target="_blank">👍 Facebook</a></li>
     </ul>
   </div>
 </div>
