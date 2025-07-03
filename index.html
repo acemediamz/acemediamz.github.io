@@ -116,12 +116,17 @@
   </div>
 </section>
 
-    <!-- Seção Formulário de Contato -->
+<!-- Seção Formulário de Contato com mensagem de sucesso -->
 <section id="contact" class="py-5 bg-white">
   <div class="container">
     <h2 class="text-center mb-4">Fale Connosco</h2>
 
-    <form action="https://formspree.io/f/mkgbevav" method="POST" class="mx-auto" style="max-width: 600px;">
+    <!-- Mensagem de sucesso -->
+    <div id="form-alert" class="alert alert-success text-center d-none" role="alert">
+      ✅ Sua mensagem foi enviada com sucesso! Entraremos em contacto em breve.
+    </div>
+
+    <form id="contato-form" action="https://formspree.io/f/XXXXABCD" method="POST" class="mx-auto" style="max-width: 600px;">
       <div class="mb-3">
         <label for="nome" class="form-label">Nome</label>
         <input type="text" class="form-control" id="nome" name="nome" required>
@@ -146,6 +151,28 @@
     </form>
   </div>
 </section>
+
+<!-- JavaScript para mostrar a mensagem após envio -->
+<script>
+  const form = document.getElementById("contato-form");
+  const alert = document.getElementById("form-alert");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.reset();
+      alert.classList.remove("d-none");
+    }
+  });
+</script>
 <!-- Contacto -->
 <section id="contact" class="py-5">
   <div class="container text-center">
