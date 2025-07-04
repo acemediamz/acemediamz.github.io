@@ -26,34 +26,44 @@
 </head>
 <body>
 <!-- Navbar com botão hamburguer moderno -->
-<nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+<!-- Navbar branca com hamburguer -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
   <div class="container">
-    <!-- Logo + botão hamburguer -->
     <a class="navbar-brand fw-bold" href="index.html">ACE Media</a>
     
-    <!-- Botão hamburguer moderno -->
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+    <!-- Botão hamburguer -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Menu lateral offcanvas -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item"><a class="nav-link" href="index.html#home">🏠 Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#about">🎯 Sobre Nós</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#services">🧰 Serviços</a></li>
-          <li class="nav-item"><a class="nav-link" href="portfolio.html">🖼️ Portfólio</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#contact">📞 Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://wa.me/258875099034" target="_blank">📱 WhatsApp</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://instagram.com/acemedia.mz" target="_blank">📷 Instagram</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://facebook.com/acemedia.mz" target="_blank">👍 Facebook</a></li>
-        </ul>
-      </div>
+    <!-- Menu que aparece/oculta -->
+    <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">🏠 Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about">🎯 Sobre Nós</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#services">💼 Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">🖼️ Portfólio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contact">📞 Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://wa.me/258875099034" target="_blank">📱 WhatsApp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://instagram.com/acemedia.mz" target="_blank">📸 Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://facebook.com/acemedia.mz" target="_blank">🔥 Facebook</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
